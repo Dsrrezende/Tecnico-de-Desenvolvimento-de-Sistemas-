@@ -21,5 +21,6 @@ public class Produto {
         System.out.println("Discrição: "+ produto1.nome);
         System.out.println("Código: "+ produto1.codigo);
         System.out.println("Preço: R$"+ produto1.preco);
+        leia.close();
     }
 }

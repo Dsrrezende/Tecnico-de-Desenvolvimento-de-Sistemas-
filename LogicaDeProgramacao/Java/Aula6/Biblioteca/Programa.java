@@ -4,7 +4,7 @@ public class Programa {
     public static void main(String[] args) {
         
         //Objeto Autor
-        Autor george = new Autor("George R.R Martin","Americano");
+        Autor george = new Autor("George R.R Martin","EUA");
         //george.nome = "George R.R Martin";       (sem construtor)
         //george.nacionalidade = "Americano";       (sem construtor)
 
@@ -17,7 +17,7 @@ public class Programa {
         geloEfogo.autor = george;
 
         //Acessando dados através da composição
-        System.out.println("O Livro "+ geloEfogo.titulo + " foi escrito por "+ george.nome);
+        System.out.println("O Livro "+ geloEfogo.titulo + " foi escrito pelo "+ george.nacionalidade+", "+ george.nome);
 
     }
 }

@@ -12,6 +12,8 @@ git remote add origin htps: ... (adiciona o caminho de destino)
 git push origin <nome-do-branch> (empurra o conteúdo para o caminho escolhido)
 git pull origin <nome-do-branch> (Puxa os arquivos do repositório)
 git clone htps: ... ( Clona o repositório de uma fonte especifica indicada)
+git remote -v (Mostra o htps de destino do meu repositório)
+
 
 	(Para terminal)
 clear ( Limpa o Terminal)
@@ -20,4 +22,5 @@ ls (lista os conteúdos dentro de uma página)
 	(para Java)
 public static void main(String[] args) --> Atalho <psvm>
 System.out.println("") --> Atalho <sout>
+java --version ( no terminal para verificar a versão do java)
 

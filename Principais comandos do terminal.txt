@@ -18,6 +18,8 @@ git remote -v (Mostra o htps de destino do meu repositório)
 	(Para terminal)
 clear ( Limpa o Terminal)
 ls (lista os conteúdos dentro de uma página)
+winget upgrade (Lista todos o programas que tenham atualizações diponiveis no PC)
+winget upgrade --all (Atualiza todos os programas desatualizados.)
 
 	(para Java)
 public static void main(String[] args) --> Atalho <psvm>

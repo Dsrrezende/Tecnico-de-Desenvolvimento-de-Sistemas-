@@ -17,7 +17,7 @@ public class Programa {
         }
         System.out.println("\n---------------------------------");
 
-        Ordenador.selectionSort(vetor);
+        Ordenador.insertionSort(vetor);
 
         for(int i=0; i < vetor.length; i++){
             System.out.printf("%d - %d\n",i, vetor[i]);

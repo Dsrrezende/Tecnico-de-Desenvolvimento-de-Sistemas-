@@ -13,21 +13,6 @@ public class Ordenador {
         }
     }
 
-    public static void selectionSort ( int [] vetor){
-        int n = vetor.length;
-        for (int i = 0; i < n - 1; i++){
-            int indicadorDoMenor = i;
-            for (int j = i+1; j < n; j++){
-                if (vetor [j] < vetor [indicadorDoMenor]){
-                    indicadorDoMenor =j;
-                }
-            }
-            int temp = vetor [indicadorDoMenor];
-            vetor [indicadorDoMenor] = vetor [i];
-            vetor[i] = temp;
-        }
-    }
-
     public static void ordenacaoPorPreco(Produto [] produtos, int quantidadeDeProdutos ){//InsertionSort
         for ( int i=1 ; i < quantidadeDeProdutos;i++){
             Produto chave = produtos[i]; // produto que será inserido na posição correta

@@ -88,19 +88,19 @@ public class Funcoes {
         System.out.println("\n==== Lista de Produtos Cadastrados ====");
 
         // Cria uma cópia do vetor para não alterar o original
-        Produto[] copia = new Produto[quantidadeDeProdutos];
+        Produto[] vetorCopia = new Produto[quantidadeDeProdutos];
         for (int i = 0; i < quantidadeDeProdutos; i++) {
-            copia[i] = produtos[i];
+            vetorCopia[i] = produtos[i];
         }
 
         // Ordena por código
-        Ordenador.ordenacaoPorCodigo(copia, quantidadeDeProdutos);
+        Ordenador.ordenacaoPorCodigo(vetorCopia, quantidadeDeProdutos);
 
         // Exibe os produtos ordenados
         for (int i = 0; i < quantidadeDeProdutos; i++) {
-            Produto p = copia[i];
+            Produto listaProduto = vetorCopia[i];
             System.out.printf("Código: %d\nNome: %s\nCategoria: %s\nPreço: R$%.2f\nEstoque: %d\n\n",
-            p.codigo, p.nome, p.categoria, p.preco, p.quantidadeEmEstoque);
+            listaProduto.codigo, listaProduto.nome, listaProduto.categoria, listaProduto.preco, listaProduto.quantidadeEmEstoque);
         }
     }
 
@@ -114,18 +114,19 @@ public class Funcoes {
         System.out.println("\n==== Lista de Produtos por Preço ====");
 
         // Cria uma cópia do vetor para não alterar o original
-        Produto[] copia = new Produto[quantidadeDeProdutos];
+        Produto[] vetorCopia = new Produto[quantidadeDeProdutos];
         for (int i = 0; i < quantidadeDeProdutos; i++) {
-            copia[i] = produtos[i];
+            vetorCopia[i] = produtos[i];
         }
 
         // Ordena por preço (InsertionSort)
-        Ordenador.ordenacaoPorPreco(copia, quantidadeDeProdutos);
+        Ordenador.ordenacaoPorPreco(vetorCopia, quantidadeDeProdutos);
 
         // Exibe os produtos ordenados
-        for (Produto p : copia) {
+        for(int i =0; i <vetorCopia.length; i++){
+            Produto listaProduto = vetorCopia[i]; 
             System.out.printf("Código: %d\nNome: %s\nCategoria: %s\nPreço: R$%.2f\nEstoque: %d\n\n",
-            p.codigo, p.nome, p.categoria, p.preco, p.quantidadeEmEstoque);
+            listaProduto.codigo, listaProduto.nome, listaProduto.categoria, listaProduto.preco, listaProduto.quantidadeEmEstoque);
         }
     }
 
@@ -143,10 +144,10 @@ public class Funcoes {
         int indice = Buscador.buscaSequencial(produtos, codigoBuscado, quantidadeDeProdutos);
 
         if (indice != -1) {
-            Produto p = produtos[indice];
+            Produto listaProduto = produtos[indice];
             System.out.println("\n==== Produto Encontrado ====");
             System.out.printf("Código: %d\nNome: %s\nCategoria: %s\nPreço: R$%.2f\nEstoque: %d\n",
-            p.codigo, p.nome, p.categoria, p.preco, p.quantidadeEmEstoque);
+            listaProduto.codigo, listaProduto.nome, listaProduto.categoria, listaProduto.preco, listaProduto.quantidadeEmEstoque);
         } else {
             System.out.println("Produto não localizado.");
         }
@@ -171,8 +172,7 @@ public class Funcoes {
         if (encontrado != null) {
             System.out.println("\n==== Produto Encontrado ====");
             System.out.printf("Código: %d\nNome: %s\nCategoria: %s\nPreço: R$%.2f\nEstoque: %d\n",
-            encontrado.codigo, encontrado.nome, encontrado.categoria,
-            encontrado.preco, encontrado.quantidadeEmEstoque);
+            encontrado.codigo, encontrado.nome, encontrado.categoria,encontrado.preco, encontrado.quantidadeEmEstoque);
         } else {
             System.out.println("Produto não localizado.");
         }

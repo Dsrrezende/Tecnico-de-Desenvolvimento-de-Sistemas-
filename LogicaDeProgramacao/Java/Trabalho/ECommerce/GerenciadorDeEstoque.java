@@ -20,12 +20,12 @@ public class GerenciadorDeEstoque {
             
             case 1:// Cadastra os Produtos no Sistema
         
-                Funcoes.cadastrarProduto(produtos, quantidadeDeProdutos, sc);
+                quantidadeDeProdutos = Funcoes.cadastrarProduto(produtos, quantidadeDeProdutos, sc);
                 break;
 
             case 2://Lista os Produtos Cadastrados por código
 
-                Funcoes.buscarProdutoPorCodigo(produtos, quantidadeDeProdutos, sc);
+                Funcoes.listarProdutosPorCodigo(produtos, quantidadeDeProdutos);
                 break;
 
             case 3: // Lista produtos ordenados por preço

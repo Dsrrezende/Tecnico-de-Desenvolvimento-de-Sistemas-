@@ -144,10 +144,10 @@ public class Funcoes {
         int indice = Buscador.buscaSequencial(produtos, codigoBuscado, quantidadeDeProdutos);
 
         if (indice != -1) {
-            Produto listaProduto = produtos[indice];
+            Produto buscarProduto = produtos[indice];
             System.out.println("\n==== Produto Encontrado ====");
             System.out.printf("Código: %d\nNome: %s\nCategoria: %s\nPreço: R$%.2f\nEstoque: %d\n",
-            listaProduto.codigo, listaProduto.nome, listaProduto.categoria, listaProduto.preco, listaProduto.quantidadeEmEstoque);
+            buscarProduto.codigo, buscarProduto.nome, buscarProduto.categoria, buscarProduto.preco, buscarProduto.quantidadeEmEstoque);
         } else {
             System.out.println("Produto não localizado.");
         }

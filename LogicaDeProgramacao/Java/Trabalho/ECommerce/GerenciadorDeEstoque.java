@@ -9,11 +9,12 @@ public class GerenciadorDeEstoque {
         int quantidadeDeProdutos = 0;
         Scanner sc = new Scanner(System.in);
         int opcao;
-        do {
 
+        Funcoes.cabecalho();
+        do {
+            
             Funcoes.exibirMenu();
-            opcao = sc.nextInt();
-            System.out.println();
+            opcao = sc.nextInt(); 
             sc.nextLine();
 
             switch (opcao) {
@@ -45,13 +46,13 @@ public class GerenciadorDeEstoque {
                 
                 break;
 
-
-            case 6://Opção para saída do sistema
-                System.out.println("Saindo do sistema...");
+            case 6://Opção para saída do 
+                Funcoes.fimDoPrograma();
                 break;
 
             default://Opção para caso o usuario digite uma opção inválida
-                System.out.println("Opção inválida!");
+                Funcoes.opcaoInvalida();
+                break;
             }
             
         } while (opcao != 6);

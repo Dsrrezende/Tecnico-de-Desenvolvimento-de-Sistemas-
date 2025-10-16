@@ -27,7 +27,7 @@ public class Ordenador {
         }
     }
 
-    public static void ordenarPorNome(Produto[] produtos, int quantidadeProdutos) {
+    public static void ordenarPorNome(Produto[] produtos, int quantidadeProdutos) {// Busca por String
         for (int i = 0; i < quantidadeProdutos - 1; i++) {
             for (int j = 0; j < quantidadeProdutos - i - 1; j++) {
                 if (produtos[j].nome.compareToIgnoreCase(produtos[j + 1].nome) > 0) {

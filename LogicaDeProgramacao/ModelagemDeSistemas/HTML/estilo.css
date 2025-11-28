@@ -1,0 +1,50 @@
+body {
+    background: #cedfc7;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa {
+    background: white;
+    width: 390px;
+    padding: 80px 35px 30px 35px;
+}
+
+.titulo {
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 12px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.logo {
+    background: black;
+    color: white;
+    width: fit-content;
+    place-self: center;
+    font-size: 40px;
+    padding: 0 10px;
+    border-radius: 6px;
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #adadad;
+}
+button {
+    padding: 4px 20px;
+    background: linear-gradient(to right, #21d4fd,#b721ff);
+    border: none;
+    color: white;
+    
+}

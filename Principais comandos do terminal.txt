@@ -5,7 +5,7 @@ git status - mostra se há arquivos não comitados
 git add . - prepara arquivos para serem comitados
 git commit -m "comentários"
 git branch -M main (caso queira alterar o novo padrão da master)
-git branch -b novo (caso queira adicionar uma o nova branch)
+git checkout -b novo (caso queira adicionar uma o nova branch)
 git checkout <nome-do-branch> ( alterna entre branchs)
 git merge <nome-do-branch> ( Funde as branchs em uma só)
 git remote add origin htps: ... (adiciona o caminho de destino)

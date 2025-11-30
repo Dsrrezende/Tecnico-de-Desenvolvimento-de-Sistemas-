@@ -6,8 +6,6 @@
 
 ## **🎯 Objetivo**
 
-- Este repositório tem como finalidade:
-
 - Documentar o aprendizado adquirido durante o curso.
 
 - Organizar projetos e exercícios realizados em sala.

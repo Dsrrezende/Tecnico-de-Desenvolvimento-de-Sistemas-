@@ -12,10 +12,10 @@ criado_em timestamp default Now() not null
 insert into Produtos (nome, codigo_barras, preco, ativo)
 values
 ('Teclado','0005462354879',78.45,true),
-('Mousepad','00054612564845',20.99,false),
-('Webcan','0005462348659',99.99,false);
+('Mousepad','00054612564845',20.99,true),
+('Webcan','0005462348659',99.99,true);
 
-alter table produtos add column fornecedor varchar(40) default 'Sem Fornecedor' not null;
+/*alter table produtos add column fornecedor varchar(40) default 'Sem Fornecedor' not null;
 
 alter table produtos 
-alter column codigo_barras type varchar(50)
+alter column codigo_barras type varchar(50);*/

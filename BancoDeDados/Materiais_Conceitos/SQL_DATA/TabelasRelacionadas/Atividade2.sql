@@ -82,3 +82,16 @@ where ano_publicacao between 1997 and 2024 /* Filtra por um intervalo de dados*/
 select * from livros
 where nome_autor like 'George%' /* Filtra por algo parecido com o parametro passado, obrigatório o uso "%"*/
 
+-- IS NULL
+--IN NOT NULL
+--BETWEEN
+--AND
+--OR
+--NOT IN
+
+select * from livros 
+--where id_livro =3 or id_livro  = 4 or id_livro = 5
+--where id_livro in (3,4,5)
+where titulo_livro in ('FANTASIA','GATOS', 'FESTA')
+
+
